@@ -86,14 +86,13 @@ a {
 
 .cards-row {
     display: flex;
-    flex-wrap: wrap; /* Permettre le retour à la ligne des éléments */
     justify-content: space-between;
 }
 
 .cards-row a {
    margin-top: 30px;
    width: calc(33.33% - 20px); /* Calculer la largeur pour que les trois cartes s'adaptent sur une ligne avec un espace entre */
-   margin-right: 20px; /* Ajouter de l'espace entre les cartes */
+   margin-right: 20px; 
 }
 
 .hebergements-cards .card {
@@ -102,7 +101,7 @@ a {
     flex-direction: column;
     border-radius: 20px;
     overflow: hidden;
-    margin-bottom: 20px; /* Ajouter de l'espace entre les cartes */
+    margin-bottom: 20px; 
 }
 
 .hebergements-cards .card-content {
@@ -319,25 +318,33 @@ header img{
     flex-direction: column;
     margin-top: 50px;
     padding:20px;
+
 }
 
 .activities-cards {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 20px;
+    height:100%;
 }
 
+.activities-cards a {
+    width: calc(25% - 20px); /* Calculer la largeur pour que les trois cartes s'adaptent sur une ligne avec un espace entre */
+}
+
+
 .activities-cards img {
-    width: 300px;
-    height: 400px;
+    width: 100%; 
+    height: 350px;
     margin: 0;
     padding: 0;
 }
 
+
 .activities-cards .card{
     padding:0;
     overflow: hidden;
+    height:100%;
 }
 
 .activities-cards .card-title {
@@ -409,6 +416,20 @@ footer {
     .card-subtitle {
         font-size: 13px;
     }
+
+    .header-links a {
+        margin-left:0px;
+    }
+
+    .activities-cards img {
+        height: 150px;
+    }
+
+    .activities-cards .card-title {
+        padding-left:10px;
+        padding-right:10px;
+    }
+
 
     
 }
