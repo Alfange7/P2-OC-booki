@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin-top:0;
 }
 
 .main-container {
@@ -193,14 +194,111 @@ header img{
 .header-links{
     display:flex;
     justify-content: space-evenly;
-    align-content: flex-start;
+    align-content: flex-end;
     width: 30%;
-    height:60%;
+    height:100%;
+    font-weight: 500;
+}
+
+.header-links a {
+    border-top: 2px solid transparent; 
+    transition: border-top-color 0.3s ease; /* Transition pour l'animation */
+    padding-top:15px;
 }
 
 .header-links a:hover{
     color:#0065FC;
+    border-top-color: #0065FC; 
 }
+
+/* Search bar and filters */
+.search-and-filters {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.search-and-filters h1 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.search-and-filters p {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar form {
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    height: 100%;
+    background-color: #F2F2F2;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px 0 10px 0;
+    border: none;
+    background-color: white;
+    color: black;
+
+}
+
+/* Placeholder noir */
+.search-bar input[type="text"]::placeholder {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.search-bar button {
+    background-color: #0065FC;
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 12px 20px; 
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+}
+
+/* Icône noire */
+.search-bar i {
+    color: black;
+    margin-left: 10px;
+    margin-right: 5px;
+    padding:0 5px 0 5px;
+}
+
+.filters{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.filter-button {
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid #d9d9d9; /* Bordure initiale */
+    background-color: transparent; /* Fond initial */
+    font-weight: bold;
+    transition: all 0.3s ease; /* Animation fluide */
+    margin-left:20px;
+}
+
+.filter-button:hover {
+    background-color: #DEEBFF;
+}
+
+
+
 
 
 
