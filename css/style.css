@@ -23,7 +23,7 @@ body {
 }
 
 main {
-    margin-top: 30px;
+    margin-top: 50px;
     flex-direction: column;
     gap: 35px;
 }
@@ -55,6 +55,9 @@ button{
 }
 
 
+
+
+
 /***************** Header ***************/
 
 header{
@@ -62,10 +65,8 @@ header{
 }
 
 header img{
-    width:61px;
-    height:19px;
     align-self: center;
-    margin-top:20px;
+    margin-top:30px;
 }
 
 .header-links{
@@ -256,6 +257,7 @@ header img{
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+   
 }
 
 .hebergements .title-txt{
@@ -266,18 +268,23 @@ header img{
 .hebergements-cards{
     flex-flow: row wrap;
     justify-content: stretch;
-
+    justify-content: space-between;
 }
 
 .hebergements-cards .card {
     flex-direction: column;
     gap: 4px;
-    flex-basis: 27.67593%;
     flex-grow: 1;
     position: relative;
     margin-top: 30px;
     padding-bottom: 10px;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+.hebergements-cards a{
+    flex-basis: 31%;
+    display:flex;
+    height:15rem;
 }
 
 .hebergements-cards img {
@@ -292,7 +299,6 @@ header img{
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
-    gap: 8px;
     padding: 4px 8px 0px 8px;
 }
 
@@ -304,10 +310,9 @@ header img{
 .hebergements .card .card-content .card-subtitle{
     font-size: 14px;
     font-weight: 400;
+    margin:5px 0 5px 0;
 }
-.hebergements .card .card-content .card-subtitle:hover{
-    text-decoration: underline;
-}
+
 
 .hebergements .card .card-content .card-subtitle::before{
     top: 0;
@@ -360,9 +365,6 @@ header img{
     font-weight: 400;
 }
 
-.populaires-cards .card-subtitle:hover{
-    text-decoration: underline;
-}
 
 
 .populaires-cards .card-rating {
@@ -379,15 +381,20 @@ header img{
 .activities .activities-cards{
     gap: 30px;
     margin-top: 30px;
+    justify-content: space-evenly;
 }
 
 .activities .activities-cards .activities-card{
     flex-direction: column;
-    flex-basis: 25%;
     position: relative;
     border-radius: 20px;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+    height:100%;
 }   
+
+.activities-cards a{
+    flex-basis: 25%;
+}
 
 .activities .activities-cards .activities-card img {
     width: 100%;
@@ -395,23 +402,14 @@ header img{
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
-.activities .activities-cards .activities-card .activities-txt{
-    padding: 20px 19px;
+
+.activities-txt{
+    margin:0;
     color: #000;
     font-size: 16px;
     font-weight: 700;
-}
-
-.activities .activities-cards .activities-card .activities-txt::before{
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-
-.activities .activities-cards .activities-card .activities-txt:hover{
-    text-decoration: underline;
+    padding: 20px 19px 20px 19px;
+    gap:10px;
 }
 
 
@@ -476,24 +474,30 @@ footer .footer-column ul li:first-child{
     .populaires {
         width: 100%;
         margin-top: 50px;
+       
     }
 
     .populaires-cards {
         display:flex;
         flex-direction: row;
         justify-content: space-between;
+        
     }
 
     .populaires-cards .card {
-        width: 30%;
+        margin-top:20px;
+    }
+
+    .populaires-cards a{
+        flex-basis: 32%;
     }
 
     .populaires-cards .card-title {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .activities .activities-cards .activities-card img{
@@ -513,6 +517,10 @@ footer .footer-column ul li:first-child{
         flex-direction: column;
         margin-top:20px;
         height: auto;
+    }
+
+    header img{
+        margin-top: 10px;
     }
 
     .header-links{
@@ -588,12 +596,9 @@ footer .footer-column ul li:first-child{
         flex-basis: 100%;
     }
 
-    .hebergements-cards > #card-1{ order: 1;}     /* used order property to make it easier */
-    .hebergements-cards > #card-2{ order: 6;}
-    .hebergements-cards > #card-3{ order: 3;}
-    .hebergements-cards > #card-4{ order: 4;}
-    .hebergements-cards > #card-5{ order: 2;}
-    .hebergements-cards > #card-6{ order: 5;}
+    .hebergements-cards a{
+        flex-basis: 100%;
+    }
 
 
     .populaires{
