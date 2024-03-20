@@ -169,6 +169,10 @@ header img{
     gap: 15px;
 }
 
+#filters-title{
+    font-size: 18px;
+}
+
 .filters .filter-buttons{
     flex-wrap: wrap;
     gap: 15px;
